@@ -1,0 +1,113 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" version="24.9.0">
+  <diagram name="Page-1" id="g1ZC9BRJkTbP3lG57iCE">
+    <mxGraphModel dx="1050" dy="1674" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="KQoFC35yPOG9Oz1l43Ks-1" value="main_pipeline.py" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="20" y="30" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KQoFC35yPOG9Oz1l43Ks-2" value="classify_notification.py" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="200" y="80" width="130" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="KQoFC35yPOG9Oz1l43Ks-3" value="notification_input.py" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="410" y="70" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="KQoFC35yPOG9Oz1l43Ks-4" value="notification_output.py" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="340" y="140" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="KQoFC35yPOG9Oz1l43Ks-5" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.427;entryY=0.05;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="KQoFC35yPOG9Oz1l43Ks-2" target="KQoFC35yPOG9Oz1l43Ks-3">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="320" as="sourcePoint" />
+            <mxPoint x="450" y="270" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="265" y="40" />
+              <mxPoint x="360" y="40" />
+              <mxPoint x="461" y="40" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KQoFC35yPOG9Oz1l43Ks-6" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="KQoFC35yPOG9Oz1l43Ks-2" target="KQoFC35yPOG9Oz1l43Ks-4">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="320" as="sourcePoint" />
+            <mxPoint x="450" y="270" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="265" y="160" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KQoFC35yPOG9Oz1l43Ks-13" value="Notification Clustering module" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="180" y="-10" width="370" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="KQoFC35yPOG9Oz1l43Ks-14" value="Backend Notification Sender module" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="180" y="270" width="370" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="KQoFC35yPOG9Oz1l43Ks-20" value="backend_main.py" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="KQoFC35yPOG9Oz1l43Ks-14">
+          <mxGeometry x="20" y="80" width="130" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="KQoFC35yPOG9Oz1l43Ks-21" value="backend_input.py" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="KQoFC35yPOG9Oz1l43Ks-14">
+          <mxGeometry x="220" y="60" width="130" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="KQoFC35yPOG9Oz1l43Ks-22" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="KQoFC35yPOG9Oz1l43Ks-14">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="87" y="80" as="sourcePoint" />
+            <mxPoint x="283" y="60" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="87" y="40" />
+              <mxPoint x="182" y="40" />
+              <mxPoint x="283" y="40" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KQoFC35yPOG9Oz1l43Ks-23" value="backend_out&lt;span style=&quot;background-color: initial;&quot;&gt;put.py&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="KQoFC35yPOG9Oz1l43Ks-14">
+          <mxGeometry x="220" y="130" width="130" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="KQoFC35yPOG9Oz1l43Ks-24" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="KQoFC35yPOG9Oz1l43Ks-14" target="KQoFC35yPOG9Oz1l43Ks-23">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="90" y="130" as="sourcePoint" />
+            <mxPoint x="165" y="160" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="90" y="150" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KQoFC35yPOG9Oz1l43Ks-25" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="KQoFC35yPOG9Oz1l43Ks-14">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="280" y="170" as="sourcePoint" />
+            <mxPoint x="-100" y="190" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="280" y="190" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KQoFC35yPOG9Oz1l43Ks-16" value="" style="endArrow=none;html=1;rounded=0;entryX=0.436;entryY=1.133;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="79" y="520" as="sourcePoint" />
+            <mxPoint x="78.98000000000003" y="60.00000000000001" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KQoFC35yPOG9Oz1l43Ks-17" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="180" as="sourcePoint" />
+            <mxPoint x="80" y="200" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="400" y="200" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KQoFC35yPOG9Oz1l43Ks-18" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="80" y="105" as="sourcePoint" />
+            <mxPoint x="199" y="104.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KQoFC35yPOG9Oz1l43Ks-19" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" target="KQoFC35yPOG9Oz1l43Ks-20">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="81" y="375" as="sourcePoint" />
+            <mxPoint x="210" y="380" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
